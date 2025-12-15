@@ -11,7 +11,7 @@ import Subscription from "./components/Subscription";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Decoriva | Home";
+    document.title = "Eventora | Modern Event Solutions";
     window.scrollTo(0, 0);
   }, []);
 
