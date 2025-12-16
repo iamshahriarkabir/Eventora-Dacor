@@ -4,7 +4,7 @@ import { FaArrowRight, FaPlay, FaStar } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-base-100 overflow-hidden pt-20 lg:pt-0">
+    <section className="relative min-h-screen flex items-center bg-base-100 overflow-hidden">
       {/* Background Blobs (Abstract shapes for modern feel) */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl lg:text-7xl font-serif font-bold leading-[1.1] text-base-content">
+          <h1 className="text-5xl xl:text-7xl font-serif font-bold leading-[1.1] text-base-content">
             Crafting <br />
             <span className="text-gradient">Experiences</span>, <br />
             Not Just Events.
@@ -84,7 +84,7 @@ const Hero = () => {
           className="relative h-[600px] w-full hidden lg:block"
         >
           {/* Main Large Image */}
-          <div className="absolute top-0 right-0 w-[85%] h-[90%] rounded-[2rem] overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-[85%] h-[90%] rounded-4xl overflow-hidden shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" 
               alt="Modern Hall" 
