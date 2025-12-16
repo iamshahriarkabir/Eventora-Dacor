@@ -84,7 +84,7 @@ const ServiceDetails = () => {
             </div>
             
             {/* Quick Stats Grid */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
                <div className="p-4 bg-base-200/50 rounded-2xl border border-base-200 flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center">
                     <FaStar />
@@ -182,7 +182,7 @@ const ServiceDetails = () => {
              <Link to="/team" className="btn btn-link no-underline text-base-content/50 hover:text-primary">View All Experts</Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {recommendedDecorators.map((dec) => (
               <div
                 key={dec._id}

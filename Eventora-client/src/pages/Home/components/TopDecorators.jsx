@@ -85,7 +85,7 @@ const TopDecorators = () => {
                     />
                     
                     {/* Social Icons Overlay (Slide Up Effect) */}
-                    <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex justify-center gap-4">
+                    <div className="absolute inset-x-0 bottom-0 p-4 bg-linear-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex justify-center gap-4">
                       <button className="btn btn-circle btn-sm btn-primary text-white border-none hover:scale-110">
                         <FaLinkedinIn />
                       </button>

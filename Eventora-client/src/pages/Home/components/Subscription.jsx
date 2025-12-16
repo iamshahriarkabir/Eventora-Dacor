@@ -50,7 +50,7 @@ const Subscription = () => {
           center={true}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto items-center">
           {plans.map((plan, idx) => (
             <div
               key={idx}

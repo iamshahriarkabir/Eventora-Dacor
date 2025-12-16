@@ -121,7 +121,7 @@ const ServiceMap = () => {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="absolute top-1/2 -translate-y-1/2 right-6 lg:right-20 z-[40] max-w-sm w-full hidden md:block"
+          className="absolute top-1/2 -translate-y-1/2 right-6 lg:right-20 z-40 max-w-sm w-full hidden md:block"
         >
           <div className="bg-base-100 p-8 rounded-2xl shadow-2xl border border-base-200">
             <div className="flex items-center justify-between mb-6">
