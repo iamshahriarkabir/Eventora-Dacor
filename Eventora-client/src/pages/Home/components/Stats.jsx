@@ -12,13 +12,8 @@ const Stats = () => {
   return (
     // Changed background to bg-primary for a bold look
     <section className="py-20 bg-primary text-primary-content relative overflow-hidden">
-      
-      {/* Decorative Background Blur */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
-
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-0 gap-x-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-0 gap-x-2">
           {statsData.map((stat, idx) => (
             <motion.div
               key={idx}
@@ -41,7 +36,7 @@ const Stats = () => {
                 />
                 <span className="text-secondary ml-1">{stat.suffix}</span>
               </h3>
-              <p className="text-xs md:text-sm font-sans font-bold uppercase tracking-[0.2em] opacity-70">
+              <p className="text-xs lg:text-sm font-sans font-bold uppercase tracking-widest opacity-70">
                 {stat.label}
               </p>
             </motion.div>
