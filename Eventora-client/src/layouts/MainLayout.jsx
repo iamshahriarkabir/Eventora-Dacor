@@ -9,8 +9,7 @@ const MainLayout = () => {
       <ScrollRestoration />
       <Navbar />
       <CartDrawer />
-      <div className="grow pt-16">
-        {/* pt-16 ensures content isn't hidden behind fixed navbar */}
+      <div className="grow">
         <Outlet />
       </div>
       <Footer />

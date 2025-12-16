@@ -69,7 +69,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled || mobileMenuOpen
-            ? "bg-base-100/80 backdrop-blur-lg shadow-sm border-b border-base-200 py-3"
+            ? "bg-base-100/80 backdrop-blur-lg border-base-200 py-3"
             : "bg-transparent py-5"
         }`}
       >
@@ -239,7 +239,11 @@ const Navbar = () => {
                     onClick={toggleTheme}
                     className="btn btn-circle btn-xs btn-ghost"
                   >
-                    {theme === "luxury-light" ? <FaMoon /> : <FaSun />}
+                    {theme === "luxury-light" ? (
+                  <FaMoon size={16} />
+                ) : (
+                  <FaSun size={16} className="text-yellow-400" />
+                )}
                   </button>
                 </div>
               ) : (
