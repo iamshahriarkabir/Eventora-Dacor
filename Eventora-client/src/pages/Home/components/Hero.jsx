@@ -4,7 +4,7 @@ import { FaArrowRight, FaPlay, FaStar } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="relative py-16 min-h-screen flex items-center bg-base-100 overflow-hidden">
+    <section className="relative py-24 min-h-screen flex items-center bg-base-100 overflow-hidden">
       {/* Background Blobs (Abstract shapes for modern feel) */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
