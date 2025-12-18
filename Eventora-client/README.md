@@ -1,9 +1,3 @@
----
-
-### 2. Client README (ফ্রন্টএন্ডের জন্য)
-এই ফাইলটি `Eventora-client` ফোল্ডারের ভেতরে (`Eventora-client/README.md`) রাখবেন।
-
-```markdown
 # Eventora Decor - Client Side
 
 This is the frontend application for **Eventora Decor**, built with the latest **React 19** ecosystem. It focuses on delivering a high-performance, visually stunning, and responsive user experience.
