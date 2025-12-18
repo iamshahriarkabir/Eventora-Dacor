@@ -46,3 +46,28 @@ VITE_appId=your_app_id
 
 # Stripe Configuration
 VITE_STRIPE_PUBLIC_KEY=pk_test_your_stripe_key
+
+```
+---
+
+## 🏃‍♂️ Run Locally
+
+1.Install dependencies:
+
+```bash
+npm install
+```
+2.Start development server:
+```bash
+npm run dev
+```
+3.Build for production:
+```bash
+npm run build
+```
+## 🧩 Key Functionalities Implemented
+
+- **Private & Role-Based Routes:** Secure routing for Admin, Decorator, and Users.
+- **Real-time Validations:** Forms utilizing Regex for passwords and required fields.
+- **Optimistic UI:** Loading spinners and skeleton screens for better UX.
+- **Dark/Light Mode:** System-wide theme toggle with persistent state.

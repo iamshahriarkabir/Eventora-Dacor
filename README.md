@@ -81,7 +81,7 @@ npm install
 # Create .env file and add credentials (see server README)
 node index.js
 ```
-### Client Setup
+### 2. Client Setup
 ```bash
 cd Eventora-client
 npm install
