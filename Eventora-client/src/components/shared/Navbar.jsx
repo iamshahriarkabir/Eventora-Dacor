@@ -77,7 +77,7 @@ const Navbar = () => {
           {/* 1. BRAND LOGO (Left Aligned for Modern Look) */}
           <Link to="/" className="flex items-center gap-1 group z-50">
             <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
-              <img src="public/Eventora.png" alt="eventora logo" />
+              <img src="/Eventora-client/public/Eventora.png" alt="eventora logo" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-serif font-bold leading-none tracking-tight text-base-content">
