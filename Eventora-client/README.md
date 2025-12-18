@@ -1,16 +1,54 @@
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 2. Client README (ফ্রন্টএন্ডের জন্য)
+এই ফাইলটি `Eventora-client` ফোল্ডারের ভেতরে (`Eventora-client/README.md`) রাখবেন।
 
-Currently, two official plugins are available:
+```markdown
+# Eventora Decor - Client Side
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the frontend application for **Eventora Decor**, built with the latest **React 19** ecosystem. It focuses on delivering a high-performance, visually stunning, and responsive user experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Design System & UI
+- **Framework:** Tailwind CSS v4 + DaisyUI 5
+- **Animations:** Framer Motion (Page transitions, Hover effects, Staggered lists).
+- **Components:** Custom Bento Grids, Glassmorphism Cards, Modern Data Tables.
+- **Responsiveness:** Fully adaptive layouts for Mobile, Tablet, and Desktop.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Dependencies & Packages
+
+| Package | Purpose |
+| :--- | :--- |
+| `react-router` (v7) | Next-gen client-side routing. |
+| `@tanstack/react-query` | Powerful server state management & caching. |
+| `axios` | HTTP client with interceptor support. |
+| `firebase` | Authentication provider. |
+| `react-hook-form` | Efficient form validation and handling. |
+| `recharts` | Data visualization for Admin dashboard. |
+| `react-leaflet` | Interactive maps for branch locations. |
+| `swiper` | Touch-enabled sliders for testimonials & galleries. |
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file in the root of `Eventora-client` and add the following keys:
+
+```env
+# Backend API Link
+VITE_API_URL=http://localhost:5000 
+# (Or your deployed server URL)
+
+# Firebase Configuration
+VITE_apiKey=your_api_key
+VITE_authDomain=your_project_id.firebaseapp.com
+VITE_projectId=your_project_id
+VITE_storageBucket=your_bucket_url
+VITE_messagingSenderId=your_sender_id
+VITE_appId=your_app_id
+
+# Stripe Configuration
+VITE_STRIPE_PUBLIC_KEY=pk_test_your_stripe_key
