@@ -90,7 +90,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="John Doe"
-                    className="input input-bordered w-full bg-base-200/30 focus:border-primary focus:bg-base-100 rounded-xl"
+                    className="input input-bordered w-full bg-base-200/30 focus:border-primary focus:bg-base-100 focus:outline-none rounded-xl"
                     required
                   />
                 </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                   <input
                     type="email"
                     placeholder="john@example.com"
-                    className="input input-bordered w-full bg-base-200/30 focus:border-primary focus:bg-base-100 rounded-xl"
+                    className="input input-bordered w-full bg-base-200/30 focus:border-primary focus:bg-base-100 focus:outline-none rounded-xl"
                     required
                   />
                 </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Event Inquiry..."
-                  className="input input-bordered w-full bg-base-200/30 focus:border-primary focus:bg-base-100 rounded-xl"
+                  className="input input-bordered w-full bg-base-200/30 focus:border-primary focus:bg-base-100 focus:outline-none rounded-xl"
                   required
                 />
               </div>
@@ -118,7 +118,7 @@ const Contact = () => {
               <div className="form-control">
                 <label className="label text-sm font-bold text-base-content/70">Message</label>
                 <textarea
-                  className="textarea textarea-bordered h-40 w-full bg-base-200/30 focus:border-primary focus:bg-base-100 rounded-xl text-base"
+                  className="textarea textarea-bordered h-40 w-full bg-base-200/30 focus:border-primary focus:bg-base-100 focus:outline-none rounded-xl text-base"
                   placeholder="Tell us about your event..."
                   required
                 ></textarea>

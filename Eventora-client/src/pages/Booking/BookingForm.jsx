@@ -223,7 +223,7 @@ const BookingForm = () => {
                 <label className="label font-bold text-xs uppercase tracking-wide opacity-70">Special Requests</label>
                 <textarea
                   {...register("notes")}
-                  className="textarea textarea-bordered h-24 focus:border-primary focus:outline-none bg-base-200/30 text-base"
+                  className="textarea textarea-bordered h-24 w-full focus:border-primary focus:outline-none bg-base-200/30 text-base"
                   placeholder="Any specific themes?"
                 ></textarea>
               </div>
@@ -323,17 +323,17 @@ const BookingForm = () => {
                   <input
                     type="text"
                     placeholder="Promo Code (Z4CODE)"
-                    className="input input-bordered w-full pl-10 pr-20 text-sm focus:outline-none uppercase"
+                    className="input input-bordered w-full pl-10 pr-20 text-sm focus:border-primary focus:outline-none uppercase"
                     value={coupon}
                     onChange={(e) => setCoupon(e.target.value)}
                     disabled={isCouponApplied}
                   />
-                  <FaGift className="absolute left-3 top-3.5 text-base-content/40" />
+                  <FaGift className="absolute left-3 z-10 top-3 text-base-content/40" />
                   <button 
                     type="button"
                     onClick={handleApplyCoupon}
                     disabled={isCouponApplied}
-                    className="absolute right-1 top-1 bottom-1 btn btn-sm btn-ghost text-primary text-xs"
+                    className="absolute right-1 top-1 bottom-1 z-1 btn btn-sm btn-ghost text-primary text-xs"
                   >
                     {isCouponApplied ? "Applied" : "Apply"}
                   </button>

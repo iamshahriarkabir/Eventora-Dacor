@@ -124,10 +124,10 @@ const Services = () => {
                 <input
                   type="text"
                   placeholder="Search keywords..."
-                  className="input input-bordered w-full pl-10 h-11 bg-base-200/50 focus:bg-base-100 transition-all rounded-lg text-sm"
+                  className="input input-bordered w-full pl-10 h-11 bg-base-200/50 focus:bg-base-100 focus:border-primary focus:outline-none transition-all rounded-lg text-sm"
                   onChange={(e) => setSearch(e.target.value)}
                 />
-                <FaSearch className="absolute left-3 top-3.5 text-base-content/40" />
+                <FaSearch className="absolute left-3 z-10 top-3.5 text-base-content/40" />
               </form>
 
               <div className="divider my-0"></div>

@@ -41,7 +41,7 @@ const PaymentHistory = () => {
       </div>
 
       {/* Summary Card (Theme Aware) */}
-      <div className="bg-gradient-to-br from-primary to-secondary p-6 md:p-8 rounded-2xl shadow-lg text-primary-content flex flex-col md:flex-row items-center justify-between relative overflow-hidden gap-6">
+      <div className="bg-linear-to-br from-primary to-secondary p-6 md:p-8 rounded-2xl shadow-lg text-primary-content flex flex-col md:flex-row items-center justify-between relative overflow-hidden gap-6">
         <div className="relative z-10 text-center md:text-left">
           <p className="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80 mb-2 flex items-center justify-center md:justify-start gap-2">
             <FaWallet /> Total Expenditure

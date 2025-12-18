@@ -125,7 +125,7 @@ const JoinTeam = () => {
                     disabled
                     className="input input-bordered w-full pl-10 rounded-xl bg-base-200/50 text-base-content/60"
                   />
-                  <FaUserTie className="absolute left-4 top-3.5 text-base-content/40" />
+                  <FaUserTie className="absolute left-4 top-3.5 z-10 text-base-content/40" />
                 </div>
               </div>
 
@@ -146,7 +146,7 @@ const JoinTeam = () => {
                       <option>Lighting Expert</option>
                       <option>Floral Artist</option>
                     </select>
-                    <FaMagic className="absolute left-4 top-3.5 text-base-content/40" />
+                    <FaMagic className="absolute left-4 z-10 top-3.5 text-base-content/40" />
                   </div>
                 </div>
 
@@ -161,7 +161,7 @@ const JoinTeam = () => {
                       placeholder="e.g. 5"
                       className="input input-bordered w-full pl-10 rounded-xl focus:border-primary focus:outline-none"
                     />
-                    <FaBriefcase className="absolute left-4 top-3.5 text-base-content/40" />
+                    <FaBriefcase className="absolute left-4 z-10 top-3.5 text-base-content/40" />
                   </div>
                 </div>
               </div>
@@ -178,7 +178,7 @@ const JoinTeam = () => {
                     placeholder="https://instagram.com/..."
                     className="input input-bordered w-full pl-10 rounded-xl focus:border-primary focus:outline-none"
                   />
-                  <FaLink className="absolute left-4 top-3.5 text-base-content/40" />
+                  <FaLink className="absolute left-4 z-10 top-3.5 text-base-content/40" />
                 </div>
                 <label className="label text-[10px] opacity-50">
                   * Link to your work samples (Instagram, Behance, Drive, etc.)

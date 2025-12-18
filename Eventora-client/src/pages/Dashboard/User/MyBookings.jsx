@@ -108,7 +108,7 @@ const MyBookings = () => {
             <FaSortAmountDown /> 
             {sortOrder === 'newest' ? 'Newest First' : sortOrder === 'oldest' ? 'Oldest First' : 'Price High-Low'}
           </div>
-          <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow-xl bg-base-100 rounded-xl w-40 border border-base-200 mt-2">
+          <ul tabIndex={0} className="dropdown-content z-1 menu p-2 shadow-xl bg-base-100 rounded-xl w-40 border border-base-200 mt-2">
             <li><a onClick={() => setSortOrder("newest")}>Newest First</a></li>
             <li><a onClick={() => setSortOrder("oldest")}>Oldest First</a></li>
             <li><a onClick={() => setSortOrder("priceHigh")}>Price: High</a></li>

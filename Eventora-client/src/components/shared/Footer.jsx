@@ -126,7 +126,7 @@ const Footer = () => {
             <p className="opacity-70 text-sm mb-4">
               Subscribe for design trends and exclusive offers.
             </p>
-            <div className="join w-full shadow-sm">
+            <div className="join w-full">
               <input
                 className="input input-bordered join-item w-full text-sm bg-base-100 focus:outline-none focus:border-primary"
                 placeholder="Email address"
