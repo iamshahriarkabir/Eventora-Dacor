@@ -11,6 +11,26 @@ import {
 import { Link } from "react-router";
 
 const Footer = () => {
+  // 1. Social Links Data Configuration
+  const socialLinks = [
+    { 
+      icon: FaFacebookF, 
+      link: "https://facebook.com", 
+    },
+    { 
+      icon: FaInstagram, 
+      link: "https://instagram.com", 
+    },
+    { 
+      icon: FaTwitter, 
+      link: "https://twitter.com",   
+    },
+    { 
+      icon: FaLinkedinIn, 
+      link: "https://linkedin.com",  
+    },
+  ];
+
   return (
     <footer className="bg-base-200 text-base-content pt-20 pb-10 border-t border-base-300">
       <div className="container mx-auto px-6">
@@ -31,18 +51,19 @@ const Footer = () => {
               Modern styling meets timeless elegance.
             </p>
 
+            {/* Social Icons Loop */}
             <div className="flex gap-3">
-              {[FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn].map(
-                (Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-10 h-10 rounded-lg bg-base-100 border border-base-300 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm"
-                  >
-                    <Icon size={16} />
-                  </a>
-                )
-              )}
+              {socialLinks.map((item, i) => (
+                <a
+                  key={i}
+                  href={item.link}
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-10 h-10 rounded-lg bg-base-100 border border-base-300 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 shadow-sm"
+                >
+                  <item.icon size={16} />
+                </a>
+              ))}
             </div>
           </div>
 

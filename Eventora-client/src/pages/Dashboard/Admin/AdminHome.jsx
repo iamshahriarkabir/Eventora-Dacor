@@ -68,7 +68,7 @@ const AdminHome = () => {
       </div>
 
       {/* 2. STATS CARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         
         {/* Revenue */}
         <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-200 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
@@ -134,7 +134,7 @@ const AdminHome = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Original Triangle Bar Chart */}
-        <div className="lg:col-span-2 bg-base-100 p-6 rounded-2xl shadow-sm border border-base-200">
+        <div className="lg:col-span-3 xl:col-span-2 bg-base-100 p-6 rounded-2xl shadow-sm border border-base-200">
           <h3 className="font-bold text-lg mb-6">Performance Metrics</h3>
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -172,7 +172,7 @@ const AdminHome = () => {
         </div>
 
         {/* Status Panel */}
-        <div className="bg-base-100 p-6 rounded-2xl shadow-sm border border-base-200 flex flex-col justify-between">
+        <div className="bg-base-100 lg:col-span-3 xl:col-span-1 p-6 rounded-2xl shadow-sm border border-base-200 flex flex-col justify-between">
           <div>
             <h3 className="font-bold text-lg mb-6">System Health</h3>
             

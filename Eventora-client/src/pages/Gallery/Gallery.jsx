@@ -15,15 +15,15 @@ const Gallery = () => {
 
   // Updated Image List (More Modern)
   const images = [
-    { id: 1, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200", category: "Wedding", title: "Minimalist Altar" },
-    { id: 2, src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1200", category: "Corporate", title: "Tech Summit" },
-    { id: 3, src: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1200", category: "Wedding", title: "Garden Reception" },
-    { id: 4, src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1200", category: "Birthday", title: "Boho Chic Party" },
-    { id: 5, src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200", category: "Corporate", title: "Product Launch" },
-    { id: 6, src: "https://images.unsplash.com/photo-1519225421980-715cb0202128?q=80&w=1200", category: "Home", title: "Nordic Living" },
-    { id: 7, src: "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200", category: "Birthday", title: "Neon Nights" },
-    { id: 8, src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200", category: "Wedding", title: "Beachside Vows" },
-    { id: 9, src: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200", category: "Office", title: "Modern Workspace" },
+    { id: 1, src: "https://i.ibb.co.com/rfKCL33d/deco8.webp", category: "Wedding", title: "Minimalist Altar" },
+    { id: 2, src: "https://i.ibb.co.com/pjNkwBd7/deco16.jpg", category: "Corporate", title: "Tech Summit" },
+    { id: 3, src: "https://i.ibb.co.com/v633Vxdx/deco1.webp", category: "Wedding", title: "Garden Reception" },
+    { id: 4, src: "https://i.ibb.co.com/LzzZ4CFR/deco20.webp", category: "Birthday", title: "Boho Chic Party" },
+    { id: 5, src: "https://i.ibb.co.com/svxZ9sj7/deco14.webp", category: "Corporate", title: "Product Launch" },
+    { id: 6, src: "https://i.ibb.co.com/G49F4b3v/deco12.webp", category: "Home", title: "Nordic Living" },
+    { id: 7, src: "https://i.ibb.co.com/sdgsz3pC/deco21.webp", category: "Birthday", title: "Neon Nights" },
+    { id: 8, src: "https://i.ibb.co.com/kgtzCz4f/deco4.webp", category: "Wedding", title: "Beachside Vows" },
+    { id: 9, src: "https://i.ibb.co.com/V0vc27XF/deco13.webp", category: "Office", title: "Modern Workspace" },
   ];
 
   const filteredImages = filter === "All" ? images : images.filter((img) => img.category === filter);
@@ -101,7 +101,7 @@ const Gallery = () => {
                 />
                 
                 {/* Modern Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                   <h3 className="text-white text-xl font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     {img.title}
                   </h3>
@@ -125,7 +125,7 @@ const Gallery = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center"
+            className="fixed inset-0 z-100 bg-black/85 backdrop-blur-md flex items-center justify-center"
           >
             <button onClick={closeLightbox} className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors z-50">
               <FaTimes />

@@ -11,31 +11,31 @@ const decorators = [
     id: 1,
     name: "Arianne Thorne",
     role: "Lead Event Planner",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=500",
+    img: "https://i.ibb.co.com/PGcQrKX8/8.png",
   },
   {
     id: 2,
     name: "Julian Vance",
     role: "Creative Director",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=500",
+    img: "https://i.ibb.co.com/N6WLvKtQ/6.png",
   },
   {
     id: 3,
-    name: "Elena Rossi",
+    name: "Elen Johny",
     role: "Floral Designer",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=500",
+    img: "https://i.ibb.co.com/sp0WhJjm/2.png",
   },
   {
     id: 4,
     name: "Marcus Chen",
     role: "Lighting Specialist",
-    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400&h=500",
+    img: "https://i.ibb.co.com/0pQ2MQ3B/5.png",
   },
   {
     id: 5,
-    name: "Sophia Miller",
+    name: "Soph Miller",
     role: "Logistics Manager",
-    img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400&h=500",
+    img: "https://i.ibb.co.com/3y2yfGcR/7.png",
   },
 ];
 

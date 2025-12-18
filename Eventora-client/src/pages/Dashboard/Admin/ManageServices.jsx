@@ -101,10 +101,12 @@ const EditModal = ({ service, onClose, refetch, user }) => {
                     className="select select-bordered w-full rounded-xl focus:border-primary focus:outline-none transition-all"
                   >
                     <option>Wedding</option>
+                    <option>Corporate</option>
+                    <option>Birthday</option>
                     <option>Home</option>
                     <option>Office</option>
-                    <option>Birthday</option>
-                    <option>Corporate</option>
+                    <option>Seminar</option>
+                    <option>Meeting</option>
                   </select>
                 </div>
               </div>
@@ -113,7 +115,7 @@ const EditModal = ({ service, onClose, refetch, user }) => {
                 <label className="label text-xs font-bold uppercase tracking-wide opacity-60 mb-1">Description</label>
                 <textarea
                   {...register("description", { required: true })}
-                  className="textarea textarea-bordered h-32 rounded-xl focus:border-primary focus:outline-none transition-all text-base leading-relaxed"
+                  className="textarea textarea-bordered w-full h-32 rounded-xl focus:border-primary focus:outline-none transition-all text-base leading-relaxed"
                 ></textarea>
               </div>
 

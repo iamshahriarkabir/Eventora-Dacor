@@ -86,7 +86,7 @@ const Hero = () => {
           {/* Main Large Image */}
           <div className="absolute top-0 right-0 w-[85%] h-[90%] rounded-4xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" 
+              src="https://i.ibb.co.com/v633Vxdx/deco1.webp" 
               alt="Modern Hall" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -99,7 +99,7 @@ const Hero = () => {
             className="absolute bottom-10 left-0 w-[45%] h-[40%] rounded-2xl overflow-hidden shadow-2xl border-4 border-base-100"
           >
              <img 
-              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=600&auto=format&fit=crop" 
+              src="https://i.ibb.co.com/ZRfG36zv/deco2.jpg" 
               alt="Detail Shot" 
               className="w-full h-full object-cover"
             />

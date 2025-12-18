@@ -66,7 +66,7 @@ const UserProfile = () => {
           className="bg-base-100 lg:col-span-2 xl:col-span-1 rounded-3xl shadow-sm border border-base-200 overflow-hidden h-fit"
         >
           {/* Cover Gradient */}
-          <div className="h-32 bg-gradient-to-r from-primary to-secondary opacity-90 relative">
+          <div className="h-32 bg-linear-to-r from-primary to-secondary opacity-90 relative">
             <div className="absolute inset-0 bg-black/10"></div>
           </div>
 

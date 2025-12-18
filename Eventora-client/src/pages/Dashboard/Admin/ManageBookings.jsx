@@ -78,11 +78,11 @@ const ManageBookings = () => {
 
         {/* Search */}
         <div className="relative w-full md:w-80">
-          <FaSearch className="absolute left-4 top-3.5 text-base-content/40" />
+          <FaSearch className="absolute left-4 top-3.5 z-20 text-base-content/40" />
           <input
             type="text"
             placeholder="Search by ID, Service or Email..."
-            className="input input-bordered w-full pl-10 h-11 bg-base-100 focus:bg-base-200 focus:border-primary rounded-xl shadow-sm transition-colors text-sm"
+            className="input input-bordered w-full pl-10 h-11 bg-base-100 focus:bg-base-200 focus:border-primary focus:outline-none rounded-xl shadow-sm transition-colors text-sm"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
@@ -188,8 +188,9 @@ const ManageBookings = () => {
                     ) : (
                       <div className="form-control w-full max-w-[200px] ml-auto">
                         <select
-                          className={`select select-sm select-bordered w-full text-xs rounded-lg focus:border-primary focus:outline-none bg-base-100 text-base-content
-                            ${booking.decoratorEmail ? "border-primary/50 text-primary font-bold" : "border-base-300"}
+                          className={`select select-sm select-bordered w-full text-xs rounded-lg
+    focus:ring-0 focus:border-primary bg-base-100 text-base-content
+                            ${booking.decoratorEmail ? "border-primary/50 text-primary font-bold " : "border-base-300 "}
                           `}
                           onChange={(e) =>
                             handleAssignDecorator(booking._id, e.target.value)

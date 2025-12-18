@@ -16,6 +16,7 @@ import {
   FaMoon,
   FaSun,
   FaCalendarAlt,
+  FaArrowLeft,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -61,10 +62,10 @@ const DashboardLayout = () => {
     <div className="h-full bg-base-100 flex flex-col w-72 shadow-2xl border-r border-base-200">
       {/* 1. HEADER */}
       <div className="h-24 flex items-center px-8">
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform">
-            E
-          </div>
+        <Link to="/" className="flex items-center gap-1 group">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+              <img src="public/Eventora.png" alt="eventora logo" />
+            </div>
           <div>
             <h1 className="font-serif font-bold text-xl leading-none">
               Eventora
@@ -88,7 +89,7 @@ const DashboardLayout = () => {
             <h4 className="font-bold text-sm truncate group-hover:text-primary transition-colors">
               {user?.displayName}
             </h4>
-            <span className="badge badge-xs badge-ghost uppercase font-bold tracking-wider text-[10px] py-2">
+            <span className="uppercase font-bold tracking-wider text-[10px]">
               {role}
             </span>
           </div>
@@ -174,7 +175,7 @@ const DashboardLayout = () => {
           <span>Settings</span>
         </NavLink>
         <NavLink to="/" className={navLinkClasses}>
-          <FaLeaf className="text-lg" />
+          <FaArrowLeft className="text-lg" />
           <span>Back Home</span>
         </NavLink>
       </div>
@@ -215,9 +216,16 @@ const DashboardLayout = () => {
         {/* Mobile Navbar */}
         <div className="lg:hidden navbar bg-base-100 border-b border-base-200 sticky top-0 z-40 px-4 shadow-sm">
           <div className="flex-1">
-            <Link to="/" className="font-serif font-bold text-xl">
-              Eventora.
-            </Link>
+            
+              <Link to="/"  className="flex flex-col font-serif font-bold text-xl">
+                  <span className="text-xl font-serif font-bold leading-none tracking-tight text-base-content">
+                    Eventora
+                  </span>
+                  <span className="text-[10px] font-sans font-bold tracking-[0.2em] text-primary uppercase">
+                    Decor
+                  </span>
+              </Link>
+            
           </div>
           <div className="flex-none">
             <label

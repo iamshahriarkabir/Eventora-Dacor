@@ -155,6 +155,9 @@ const AddService = () => {
                     <option>Corporate</option>
                     <option>Birthday</option>
                     <option>Home</option>
+                    <option>Office</option>
+                    <option>Seminar</option>
+                    <option>Meeting</option>
                   </select>
                   <FaLayerGroup className="absolute left-4 top-3.5 text-base-content/30" />
                 </div>
@@ -166,7 +169,14 @@ const AddService = () => {
                   <select {...register("location")} className="select select-bordered w-full pl-10 bg-base-100 rounded-xl">
                     <option>Dhaka</option>
                     <option>Chittagong</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                    <option>Barisal</option>
+                    <option>Rangpur</option>
+                    <option>Cumilla</option>
+                    <option>Bogura</option>
                     <option>Sylhet</option>
+                    <option>Mymensingh</option>
                     <option>All Bangladesh</option>
                   </select>
                   <FaMapMarkerAlt className="absolute left-4 top-3.5 text-base-content/30" />

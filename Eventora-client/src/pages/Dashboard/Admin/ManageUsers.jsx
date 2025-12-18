@@ -128,7 +128,7 @@ const ManageUsers = () => {
         {/* Search (Only show for Users tab) */}
         {activeTab === "users" && (
           <div className="relative w-full md:w-64">
-            <FaSearch className="absolute left-3 top-3 text-base-content/40" />
+            <FaSearch className="absolute left-3 top-2 z-20 text-base-content/40" />
             <input 
               type="text" 
               placeholder="Search users..." 
@@ -170,9 +170,9 @@ const ManageUsers = () => {
                       </div>
                     </td>
                     <td>
-                      <span className={`badge badge-sm font-bold border-none whitespace-nowrap px-3 py-3
-                        ${u.role === 'admin' ? 'bg-primary/10 text-primary' : 
-                          u.role === 'decorator' ? 'bg-purple-100 text-purple-600 dark:bg-purple-900/20 dark:text-purple-300' : 'bg-base-200 text-base-content/70'}`}>
+                      <span className={`badge badge-sm font-bold whitespace-nowrap rounded-full px-3 py-3
+                        ${u.role === 'admin' ? 'bg-success/10 text-success border border-success/20' : 
+                          u.role === 'decorator' ? 'bg-purple-100 text-purple-600 border border-purple-200 dark:bg-purple-900/20 dark:text-purple-400 dark:border-purple-800/20' : 'bg-base-200 text-base-content/70'}`}>
                         {u.role || 'user'}
                       </span>
                     </td>
