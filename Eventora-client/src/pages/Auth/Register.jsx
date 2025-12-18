@@ -52,7 +52,7 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-base-200 relative overflow-hidden p-4">
+    <div className="min-h-screen py-24 flex items-center justify-center bg-base-200 relative overflow-hidden p-4">
       
       {/* Background Decor (Abstract Blobs - Matches Login) */}
       <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[100px] pointer-events-none"></div>
