@@ -1,7 +1,7 @@
 # Eventora Decor - Smart Event Styling & Booking Platform
 
-![Eventora Banner](https://via.placeholder.com/1200x400.png?text=Eventora+Decor+Platform) 
-<!-- *Note: Replace with a real screenshot of your landing page* -->
+![Eventora Banner](https://i.ibb.co.com/PGG3V8ST/eventora.png) 
+
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![MERN Stack](https://img.shields.io/badge/MERN-Stack-green)
