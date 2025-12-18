@@ -24,7 +24,7 @@ const About = () => {
           <p className="text-xs font-bold tracking-[0.3em] text-primary uppercase mb-6 bg-primary/10 inline-block px-4 py-2 rounded-full">
             Since 2024
           </p>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-base-content leading-tight mb-8">
+          <h1 className="text-4xl md:text-7xl font-serif font-bold text-base-content leading-tight mb-8">
             Designing Moments <br />
 
             <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">

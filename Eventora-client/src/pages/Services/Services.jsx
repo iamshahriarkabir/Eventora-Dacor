@@ -86,7 +86,7 @@ const Services = () => {
     <div className="min-h-screen bg-base-100 pt-24 pb-20">
       {/* PAGE HEADER */}
       <div className="container mx-auto px-6 mb-12">
-        <div className="flex flex-col md:flex-row justify-between items-end border-b border-base-200 pb-6 gap-4">
+        <div className="flex flex-col md:flex-row justify-between md:items-end border-b border-base-200 pb-6 gap-4">
           <div>
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-base-content">
               The Collection

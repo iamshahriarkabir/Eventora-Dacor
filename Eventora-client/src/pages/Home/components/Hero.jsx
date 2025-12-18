@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-5xl xl:text-7xl font-serif font-bold leading-[1.1] text-base-content">
+          <h1 className="text-4xl md:text-5xl xl:text-7xl font-serif font-bold leading-[1.1] text-base-content">
             Crafting <br />
             <span className="text-gradient">Experiences</span>, <br />
             Not Just Events.
