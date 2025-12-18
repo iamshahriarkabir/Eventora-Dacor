@@ -188,8 +188,7 @@ const ManageBookings = () => {
                     ) : (
                       <div className="form-control w-full max-w-[200px] ml-auto">
                         <select
-                          className={`select select-sm select-bordered w-full text-xs rounded-lg
-    focus:ring-0 focus:border-primary bg-base-100 text-base-content
+                          className={`select select-sm select-bordered w-full text-xs rounded-lg focus:ring-0 focus:border-primary bg-base-100 text-base-content
                             ${booking.decoratorEmail ? "border-primary/50 text-primary font-bold " : "border-base-300 "}
                           `}
                           onChange={(e) =>

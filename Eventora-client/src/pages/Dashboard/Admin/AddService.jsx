@@ -79,10 +79,10 @@ const AddService = () => {
                 <div className="relative">
                   <input 
                     {...register("service_name", { required: true })} 
-                    className="input input-bordered w-full pl-10 h-12 focus:border-primary transition-all rounded-xl" 
+                    className="input input-bordered w-full pl-10 h-12 focus:border-primary focus:outline-none transition-all rounded-xl" 
                     placeholder="e.g. Royal Wedding Setup" 
                   />
-                  <FaHeading className="absolute left-4 top-4 text-base-content/30" />
+                  <FaHeading className="absolute left-4 top-4 z-10 text-base-content/30" />
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ const AddService = () => {
                 <div className="relative">
                   <textarea 
                     {...register("description", { required: true })} 
-                    className="textarea textarea-bordered w-full pl-10 pt-4 h-40  focus:border-primary transition-all rounded-xl text-base leading-relaxed" 
+                    className="textarea textarea-bordered w-full pl-10 pt-4 h-40  focus:border-primary focus:outline-none transition-all rounded-xl text-base leading-relaxed" 
                     placeholder="Write a detailed description about what this service includes..."
                   ></textarea>
                   <FaAlignLeft className="absolute left-4 top-4 text-base-content/30" />
@@ -113,7 +113,7 @@ const AddService = () => {
                 <input 
                   type="text" 
                   {...register("image", { required: true })} 
-                  className="input input-bordered w-full pl-10 h-12 bg-base-100 focus:border-primary transition-all rounded-xl" 
+                  className="input input-bordered w-full pl-10 h-12 bg-base-100 focus:border-primary focus:outline-none transition-all rounded-xl" 
                   placeholder="Paste direct image link (https://...)" 
                 />
                 <FaCloudUploadAlt className="absolute left-4 top-4 text-base-content/30 z-10" />
@@ -159,7 +159,7 @@ const AddService = () => {
                     <option>Seminar</option>
                     <option>Meeting</option>
                   </select>
-                  <FaLayerGroup className="absolute left-4 top-3.5 text-base-content/30" />
+                  <FaLayerGroup className="absolute left-4 top-3.5 z-10 text-base-content/30" />
                 </div>
               </div>
 
@@ -179,7 +179,7 @@ const AddService = () => {
                     <option>Mymensingh</option>
                     <option>All Bangladesh</option>
                   </select>
-                  <FaMapMarkerAlt className="absolute left-4 top-3.5 text-base-content/30" />
+                  <FaMapMarkerAlt className="absolute left-4 z-10 top-3.5 text-base-content/30" />
                 </div>
               </div>
 
@@ -187,15 +187,15 @@ const AddService = () => {
                 <div className="form-control">
                   <label className="label text-xs font-bold uppercase tracking-wide opacity-70">Price</label>
                   <div className="relative">
-                    <input type="number" {...register("cost", { required: true })} className="input input-bordered w-full pl-8 bg-base-100 rounded-xl" placeholder="0.00" />
-                    <FaDollarSign className="absolute left-3 top-3.5 text-base-content/30" />
+                    <input type="number" {...register("cost", { required: true })} className="input input-bordered focus:border-primary focus:outline-none w-full pl-8 bg-base-100 rounded-xl" placeholder="0.00" />
+                    <FaDollarSign className="absolute left-3 z-10 top-3.5 text-base-content/30" />
                   </div>
                 </div>
                 <div className="form-control">
                   <label className="label text-xs font-bold uppercase tracking-wide opacity-70">Unit</label>
                   <div className="relative">
-                    <input type="text" {...register("unit")} className="input input-bordered w-full pl-8 bg-base-100 rounded-xl" placeholder="Event" />
-                    <FaCube className="absolute left-3 top-3.5 text-base-content/30" />
+                    <input type="text" {...register("unit")} className="input input-bordered focus:border-primary focus:outline-none w-full pl-8 bg-base-100 rounded-xl" placeholder="Event" />
+                    <FaCube className="absolute left-3 top-3.5 z-10 text-base-content/30" />
                   </div>
                 </div>
               </div>
