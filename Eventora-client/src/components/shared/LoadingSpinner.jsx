@@ -19,8 +19,9 @@ const LoadingSpinner = () => {
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           className="absolute w-12 h-12 bg-base-200 rounded-full flex items-center justify-center shadow-inner"
         >
-           {/* Brand Logo "E" */}
-           <span className="text-xl font-serif font-bold text-primary">E</span>
+           <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+              <img src="/Eventora.png" alt="eventora logo" />
+            </div>
         </motion.div>
       </div>
 
