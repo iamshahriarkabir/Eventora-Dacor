@@ -64,7 +64,7 @@ const DashboardLayout = () => {
       <div className="h-24 flex items-center px-8">
         <Link to="/" className="flex items-center gap-1 group">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
-              <img src="public/Eventora.png" alt="eventora logo" />
+              <img src="/Eventora.png" alt="eventora logo" />
             </div>
           <div>
             <h1 className="font-serif font-bold text-xl leading-none">
