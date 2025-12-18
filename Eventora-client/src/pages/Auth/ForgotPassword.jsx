@@ -48,11 +48,11 @@ const ForgotPassword = () => {
         {/* 1. LEFT SIDE: Visual */}
         <div className="md:w-1/2 relative bg-black hidden md:block">
           <img
-            src="https://images.unsplash.com/photo-1555421689-49178386ad8f?q=80&w=1000&auto=format&fit=crop"
+            src="https://i.ibb.co.com/RkdW87CN/lock.jpg"
             className="absolute inset-0 w-full h-full object-cover opacity-60"
             alt="Security"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent"></div>
           
           <div className="relative z-10 h-full flex flex-col justify-between p-12 text-white">
             <Link to="/login" className="flex items-center gap-2 group w-fit text-white/80 hover:text-white transition-colors">
@@ -96,10 +96,10 @@ const ForgotPassword = () => {
                 <input
                   type="email"
                   {...register("email", { required: true })}
-                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="name@example.com"
                 />
-                <FaEnvelope className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaEnvelope className="absolute z-10 left-3.5 top-3.5 text-base-content/30" />
               </div>
             </div>
 

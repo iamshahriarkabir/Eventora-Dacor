@@ -69,11 +69,11 @@ const Register = () => {
         {/* 1. LEFT SIDE: Artistic Banner */}
         <div className="md:w-1/2 relative bg-black hidden md:block">
           <img
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop"
+            src="https://i.ibb.co.com/mFdYgYWk/deco9.webp"
             className="absolute inset-0 w-full h-full object-cover opacity-70"
             alt="Event Planning"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-secondary/90 to-transparent mix-blend-multiply"></div>
           
           <div className="relative z-10 h-full flex flex-col justify-between p-12 text-white">
             <Link to="/" className="flex items-center gap-2 group w-fit">
@@ -122,10 +122,10 @@ const Register = () => {
                 <input
                   type="text"
                   {...register("name", { required: "Name is required" })}
-                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="John Doe"
                 />
-                <FaUser className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaUser className="absolute left-3.5 z-10 top-3 text-base-content/30" />
               </div>
               {errors.name && <span className="text-error text-xs mt-1">{errors.name.message}</span>}
             </div>
@@ -137,10 +137,10 @@ const Register = () => {
                 <input
                   type="text"
                   {...register("photoURL", { required: "Photo URL is required" })}
-                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="https://..."
                 />
-                <FaCamera className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaCamera className="absolute left-3.5 top-3 z-10 text-base-content/30" />
               </div>
               {errors.photoURL && <span className="text-error text-xs mt-1">{errors.photoURL.message}</span>}
             </div>
@@ -152,10 +152,10 @@ const Register = () => {
                 <input
                   type="email"
                   {...register("email", { required: "Email is required" })}
-                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="name@example.com"
                 />
-                <FaEnvelope className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaEnvelope className="absolute left-3.5 top-3 z-10 text-base-content/30" />
               </div>
               {errors.email && <span className="text-error text-xs mt-1">{errors.email.message}</span>}
             </div>
@@ -167,14 +167,14 @@ const Register = () => {
                 <input
                   type={showPassword ? "text" : "password"}
                   {...register("password", passwordValidation)}
-                  className="input input-bordered w-full pl-10 pr-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 pr-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="••••••••"
                 />
-                <FaLock className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaLock className="absolute left-3.5 top-3 z-20 text-base-content/30" />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3.5 top-3.5 text-base-content/40 hover:text-primary transition-colors"
+                  className="absolute right-3.5 top-3.5 z-10 text-base-content/40 hover:text-primary transition-colors"
                 >
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </button>

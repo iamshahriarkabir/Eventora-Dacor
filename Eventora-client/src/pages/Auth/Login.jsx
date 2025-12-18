@@ -73,11 +73,11 @@ const Login = () => {
         {/* 1. LEFT SIDE: Artistic Banner */}
         <div className="md:w-1/2 relative bg-black hidden md:block">
           <img
-            src="https://i.ibb.co.com/6cBnCdBF/balloon-twist-shaped-like-dragon-Edited.png"
+            src="https://i.ibb.co.com/nq5WTmD2/deco5.webp"
             className="absolute inset-0 w-full h-full object-cover opacity-60 scale-x-[-1]"
             alt="Luxury Event"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-primary/90 to-transparent mix-blend-multiply"></div>
           
           <div className="relative z-10 h-full flex flex-col justify-between p-12 text-white">
             <Link to="/" className="flex items-center gap-2 group w-fit">
@@ -126,10 +126,10 @@ const Login = () => {
                 <input
                   type="email"
                   {...register("email", { required: true })}
-                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="Enter your email"
                 />
-                <FaEnvelope className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaEnvelope className="absolute left-3.5 z-10 top-3.5 text-base-content/30" />
               </div>
             </div>
 
@@ -140,14 +140,14 @@ const Login = () => {
                 <input
                   type={showPassword ? "text" : "password"}
                   {...register("password", { required: true })}
-                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary transition-all"
+                  className="input input-bordered w-full pl-10 rounded-xl bg-base-200/30 focus:bg-base-100 focus:border-primary focus:outline-none transition-all"
                   placeholder="••••••••"
                 />
-                <FaLock className="absolute left-3.5 top-3.5 text-base-content/30" />
+                <FaLock className="absolute left-3.5 top-3 z-10 text-base-content/30" />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3.5 top-3.5 text-base-content/40 hover:text-primary transition-colors"
+                  className="absolute right-3.5 z-10 top-3 text-base-content/40 hover:text-primary transition-colors"
                 >
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </button>
