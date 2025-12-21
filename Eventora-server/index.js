@@ -364,7 +364,7 @@ async function run() {
       SAVE10: 0.1, // 10% off
       STYLE20: 0.2, // 20% off
       FIRST50: 50,
-      Z4CODE: 0.9, // 🔥 Its Ownership
+      Z4CODE: 0.1, // 🔥 Its Ownership
     };
 
 
@@ -392,7 +392,7 @@ async function run() {
           finalAmount -= discountAmount;
         }
 
-        const clientUrl = process.env.CLIENT_URL || "http://localhost:5173";
+        const clientUrl = "https://eventora-client.vercel.app";
 
         const session = await stripeClient.checkout.sessions.create({
           payment_method_types: ["card"],
