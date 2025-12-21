@@ -417,7 +417,7 @@ async function run() {
             userEmail,
             couponUsed: couponCode || "none",
           },
-          success_url: `${clientUrl}/dashboard/payment/success?session_id={CHECKOUT_SESSION_ID}&bookingId=${bookingId}`,
+          success_url: `${clientUrl}/dashboard/payment/success?session_id=${CHECKOUT_SESSION_ID}&bookingId=${bookingId}`,
           cancel_url: `${clientUrl}/services`,
         });
 
