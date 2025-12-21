@@ -392,7 +392,7 @@ async function run() {
           finalAmount -= discountAmount;
         }
 
-        const clientUrl = "https://eventora-client.vercel.app";
+        const clientUrl = "https://eventora-client-beige.vercel.app";
 
         const session = await stripeClient.checkout.sessions.create({
           payment_method_types: ["card"],
