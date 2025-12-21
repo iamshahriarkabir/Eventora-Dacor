@@ -25,7 +25,7 @@ const Login = () => {
     signIn(data.email, data.password)
       .then(() => {
         toast.success("Welcome back!", { id: toastId });
-        navigate(from, { replace: true });
+        navigate(from);
       })
       .catch((error) => {
         const msg = getErrorMessage(error.code);
@@ -46,7 +46,7 @@ const Login = () => {
           .post(`${import.meta.env.VITE_API_URL}/auth/user`, userInfo)
           .then(() => {
             toast.success("Welcome back!");
-            navigate(from, { replace: true });
+            navigate(from);
           });
       })
       .catch((error) => {
