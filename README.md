@@ -62,7 +62,7 @@ Eventora-Dacor/
 ├── Eventora-client/   # Frontend Application (React + Vite)
 ├── Eventora-server/   # Backend API (Node + Express)
 └── README.md          # Project Documentation
-
+```
 ## 🚀 Getting Started locally
 
 To run this project locally, you need to setup both the client and server terminals.
