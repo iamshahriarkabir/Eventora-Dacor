@@ -22,7 +22,9 @@ const Services = () => {
     label: "All",
   });
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  
+  // Requirement Update: Increase items per page to fill 4-column grid (e.g., 8 or 12 items)
+  const itemsPerPage = 8; 
 
   useEffect(() => {
     document.title = "Eventora | The Collection";
@@ -282,8 +284,9 @@ const Services = () => {
           {/* CONTENT GRID */}
           <div className="flex-1">
             {isLoading ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
+              // Updated Skeleton to reflect 4-column layout
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
                   <div
                     key={i}
                     className="h-[350px] bg-base-200 rounded-2xl animate-pulse"
@@ -292,6 +295,7 @@ const Services = () => {
               </div>
             ) : (
               <>
+                {/* Updated Grid for 4 Columns in XL screens */}
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 min-h-[400px]">
                   {services.length > 0 ? (
                     services.map((service, idx) => (

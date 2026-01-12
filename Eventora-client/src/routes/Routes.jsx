@@ -20,6 +20,8 @@ import DashboardEntry from "../pages/Dashboard/DashboardEntry";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import BeADecor from "../pages/BeADecor/BeADecor";
 import Cart from "../pages/Cart/Cart";
+import Blogs from "../pages/Blogs/Blogs";
+import BlogDetails from "../pages/Blogs/BlogDetails";
 
 // --- Admin Pages ---
 import AdminHome from "../pages/Dashboard/Admin/AdminHome";
@@ -27,6 +29,8 @@ import AddService from "../pages/Dashboard/Admin/AddService";
 import ManageUsers from "../pages/Dashboard/Admin/ManageUsers";
 import ManageBookings from "../pages/Dashboard/Admin/ManageBookings";
 import ManageServices from "../pages/Dashboard/Admin/ManageServices";
+import AddBlog from "../pages/Dashboard/Admin/AddBlog";
+
 
 // --- Decorator Pages ---
 import DecoratorHome from "../pages/Dashboard/Decorator/DecoratorHome";
@@ -69,6 +73,16 @@ export const router = createBrowserRouter([
         element: <ForgotPassword />,
       },
       { path: "services/:id", element: <ServiceDetails /> },
+
+      {
+        path: "blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "blogs/:id",
+        element: <BlogDetails />,
+      },
+
       {
         path: "book/:id",
         element: (
@@ -126,6 +140,14 @@ export const router = createBrowserRouter([
         element: (
           <AdminRoute>
             <AdminHome />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "add-blog",
+        element: (
+          <AdminRoute>
+            <AddBlog />
           </AdminRoute>
         ),
       },

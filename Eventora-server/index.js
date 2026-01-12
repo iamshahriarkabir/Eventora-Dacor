@@ -316,6 +316,17 @@ async function run() {
       res.send(result);
     });
 
+    // 🔥 NEW: Add Blog API (Paste this part)
+    app.post("/blogs", verifyFBToken, async (req, res) => {
+      const user = await usersCollection.findOne({ email: req.decoded_email });
+      if (user?.role !== "admin") return res.status(403).send({ message: "forbidden" });
+      
+      const blog = req.body;
+      blog.date = new Date(); // Auto assign server date
+      const result = await blogsCollection.insertOne(blog);
+      res.send(result);
+    });
+
     // --- 7. ADMIN ANALYTICS ---
     app.get("/stats", verifyFBToken, async (req, res) => {
       const totalUsers = await usersCollection.countDocuments();

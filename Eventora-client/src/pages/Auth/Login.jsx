@@ -59,10 +59,10 @@ const Login = () => {
   const handleDemoLogin = (role) => {
     if(role === 'admin') {
       setValue("email", "admin@eventora.com"); // Replace with real demo admin email
-      setValue("password", "123456");
+      setValue("password", "Demo@1234");
     } else {
       setValue("email", "user@eventora.com");  // Replace with real demo user email
-      setValue("password", "123456");
+      setValue("password", "Demo@1234");
     }
     toast.success(`${role.toUpperCase()} credentials filled! Click Sign In.`);
   };

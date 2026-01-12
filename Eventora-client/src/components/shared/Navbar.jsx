@@ -55,6 +55,7 @@ const Navbar = () => {
     { name: "Gallery", path: "/gallery" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
+    { name: "Blog", path: "/Blogs" },
   ];
 
   // Conditionally add "Join Team" if user is logged in
