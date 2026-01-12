@@ -35,7 +35,7 @@ const LatestNews = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {latestBlogs.map((blog) => (
             <div
               key={blog._id}
@@ -43,7 +43,7 @@ const LatestNews = () => {
             >
               <div className="relative h-60 overflow-hidden">
                 <img
-                  src={blog.image || "https://images.unsplash.com/photo-1511795409835-a96041e7a2e9?q=80&w=600&auto=format&fit=crop"}
+                  src={blog.image || "https://i.ibb.co.com/4R5MR0Jg/deco6.webp"}
                   alt={blog.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

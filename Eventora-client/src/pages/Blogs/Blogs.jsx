@@ -40,7 +40,7 @@ const Blogs = () => {
       <div className="container mx-auto px-6">
         {isLoading ? (
           // Skeleton Loader
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="flex flex-col gap-4">
                 <div className="skeleton h-64 w-full rounded-2xl"></div>
@@ -57,7 +57,7 @@ const Blogs = () => {
                     <h3 className="text-xl">No blogs found currently.</h3>
                 </div>
              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {blogs.map((blog, idx) => (
                     <motion.div
                         key={blog._id}

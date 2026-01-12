@@ -17,6 +17,7 @@ import {
   FaSun,
   FaCalendarAlt,
   FaArrowLeft,
+  FaPaperPlane, // 🔥 এই আইকনটি মিসিং ছিল
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -125,8 +126,14 @@ const DashboardLayout = () => {
             </NavLink>
             
             <p className="px-4 text-[10px] font-bold uppercase tracking-widest text-base-content/40 mt-6 mb-2">
-              Catalog
+              Content & Catalog
             </p>
+            {/* 🔥 NEW BLOG LINK */}
+            <NavLink to="/dashboard/add-blog" className={navLinkClasses}>
+              <FaPaperPlane className="text-lg" />
+              <span>Publish Blog</span>
+            </NavLink>
+
             <NavLink to="/dashboard/add-service" className={navLinkClasses}>
               <FaPlusCircle className="text-lg" />
               <span>Add Service</span>
@@ -135,22 +142,6 @@ const DashboardLayout = () => {
               <FaLayerGroup className="text-lg" />
               <span>All Services</span>
             </NavLink>
-
-            <p className="px-4 text-[10px] font-bold uppercase tracking-widest text-base-content/40 mt-6 mb-2">
-              Content
-            </p>
-             {/* 🔥 NEW LINK HERE */}
-            <NavLink to="/dashboard/add-blog" className={navLinkClasses}>
-              <FaPaperPlane className="text-lg" />
-              <span>Publish Blog</span>
-            </NavLink>
-             
-             {/* Existing Catalog Links... */}
-             <NavLink to="/dashboard/add-service" className={navLinkClasses}>
-              <FaPlusCircle className="text-lg" />
-              <span>Add Service</span>
-            </NavLink>
-
           </>
         )}
 

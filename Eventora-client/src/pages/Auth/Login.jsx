@@ -171,7 +171,7 @@ const Login = () => {
                 </button>
               </div>
               <label className="label text-right mt-1">
-                <Link to="/forgot-password" class="label-text-alt link link-hover text-primary font-bold">
+                <Link to="/forgot-password" className="label-text-alt link link-hover text-primary font-bold">
                   Forgot password?
                 </Link>
               </label>
