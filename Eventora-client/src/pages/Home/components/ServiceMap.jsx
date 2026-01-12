@@ -66,7 +66,7 @@ const ServiceMap = () => {
   const [activeBranch, setActiveBranch] = useState(branches[0]);
 
   return (
-    <section className="pb-0 bg-base-100 relative">
+    <section className="pt-20 pb-0 bg-base-100 ">
       <div className="container mx-auto px-6 mb-12">
         <SectionTitle
           heading="Nationwide Presence"
