@@ -85,7 +85,7 @@ const Login = () => {
         {/* LEFT SIDE: Banner */}
         <div className="md:w-1/2 relative bg-black hidden md:block">
           <img
-            src="https://images.unsplash.com/photo-1519225421980-715cb0202128?q=80&w=1000&auto=format&fit=crop"
+            src="https://i.ibb.co.com/LDRjyZ1P/ser4.jpg"
             className="absolute inset-0 w-full h-full object-cover opacity-60"
             alt="Luxury Event"
           />
