@@ -37,7 +37,7 @@ const Testimonials = () => {
   return (
     <section className="py-24 bg-primary/5 relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+      {/* <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div> */}
       
       <div className="container mx-auto px-6 relative z-10">
         <SectionTitle
